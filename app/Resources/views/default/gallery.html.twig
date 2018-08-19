@@ -1,0 +1,97 @@
+{% extends 'base.html.twig' %}
+{% block title %} <title> Photo Gallery - Rose Villa Home Stay</title> {% endblock %}
+{% block body %}
+
+
+<!-- Menu Block -->
+
+		<!-- Menu Block -->
+		<div class="menu-block">
+			<!-- Container -->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<nav class="navbar navbar-default ow-navigation">
+							<div class="navbar-header">
+								<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<a href="index.php" title="Rose Villa, Kochi" class="navbar-brand"><img src="{{ asset('images/mlogo.png') }}" alt="The Holiday Resorts, Cottages &amp; Spa Manali" /></a>
+							</div>
+							<div class="navbar-collapse collapse" id="navbar">
+								<ul class="nav navbar-nav">
+                  <li><a href="{{ path('homepage') }}" title="Home">Home</a></li>
+                                    <li><a href="{{ path('aboutpage') }}" title="About Us">About Us</a></li>
+                                    <li><a href="{{ path('packagespage') }}" title="Packages">Packages</a></li>
+                                    <li><a href="{{ path('facilitiespage') }}" title="Facilities">Facilities</a></li>
+                  <li class="active"><a href="{{ path('gallerypage') }}" title="Gallery">Gallery</a></li>
+                  <li><a style="padding-right:50px" href="{{ path('contact_uspage') }}" title="Contact">Contact</a></li>
+                </ul>
+							</div>
+						</nav>
+					</div>
+				</div><!-- Row /- -->
+			</div><!-- Container /- -->
+		</div><!-- Menu Block /- -->
+	</header><!-- Header Section /- -->
+    <main class="site-main page-spacing">
+  <div class="container-fluid page-banner about-banner">
+    <div class="container">
+      <h3>Photo Gallery</h3>
+      <ol class="breadcrumb">
+        <li><a href="index.php">Home</a></li>
+        <li class="active">Photo Gallery</li>
+      </ol>
+    </div>
+  </div>
+  <!-- Page Banner /- -->
+  <div class="section-padding"></div>
+  <div class="container">
+    <div id="portfolio-section" class="container-fluid portfolio-section no-padding">
+      <!-- Portfolio Filters -->
+      <div class="col-md-12 col-sm-12 col-xs-12 portfolio-list no-padding">
+        
+        
+        
+        
+        
+        
+        <div class="col-md-2 col-sm-4 col-xs-6 no-padding portfolio-box  "> <a href="gallery/8G6A6941.jpg" title="Rose Villa, Kochi" class="popup-modal"> <img width="100%" alt="Rose Villa, Kochi" src="{{ asset('thumb/8G6A6941.jpg') }}" />
+          <h3><span> </span></h3>
+          </a> </div>
+        <div class="col-md-2 col-sm-4 col-xs-6 no-padding portfolio-box  "> <a href="gallery/8G6A6953.jpg" title="Rose Villa, Kochi" class="popup-modal"> <img width="387" alt="Rose Villa, Kochi" src="{{ asset('thumb/8G6A6953.jpg') }}" />
+          <h3><span> </span></h3>
+          </a> </div>
+        <div class="col-md-2 col-sm-4 col-xs-6 no-padding portfolio-box  "> <a href="{{ asset('gallery/8G6A6955.jpg') }}" title="Rose Villa, Kochi" class="popup-modal"> <img width="387" alt="Rose Villa, Kochi" src="{{ asset('thumb/8G6A6955.jpg') }}" />
+          <h3><span> </span></h3>
+          </a> </div>
+        <div class="col-md-2 col-sm-4 col-xs-6 no-padding portfolio-box "> <a href="{{ asset('gallery/8G6A6961.jpg') }}" title="Rose Villa, Kochi" class="popup-modal"> <img width="100%" alt="Rose Villa, Kochi" src="{{ asset('thumb/8G6A6961.jpg') }}" />
+          <h3><span> </span></h3>
+          </a> </div>
+        <div class="col-md-2 col-sm-4 col-xs-6 no-padding portfolio-box "> <a href="{{ asset('gallery/8G6A6981.jpg') }}" title="Rose Villa, Kochi" class="popup-modal"> <img width="100%" alt="Rose Villa, Kochi" src="{{ asset('thumb/8G6A6981.jpg') }}" />
+          <h3><span> </span></h3>
+          </a> </div>
+        <div class="col-md-2 col-sm-4 col-xs-6 no-padding portfolio-box "> <a href="{{ asset('gallery/8G6A7006.jpg') }}" title="Rose Villa, Kochi" class="popup-modal"> <img width="100%" alt="Rose Villa, Kochi" src="{{ asset('thumb/8G6A7006.jpg') }}" />
+          <h3><span> </span></h3>
+          </a> </div>
+        <div class="col-md-2 col-sm-4 col-xs-6 no-padding portfolio-box "> <a href="{{ asset('gallery/8G6A7026.jpg') }}" title="Rose Villa, Kochi" class="popup-modal"> <img width="100%" alt="Rose Villa, Kochi" src="{{ asset('thumb/8G6A7026.jpg') }}" />
+          <h3><span> </span></h3>
+          </a> </div>
+        <div class="col-md-2 col-sm-4 col-xs-6 no-padding portfolio-box "> <a href="{{ asset('gallery/8G6A7043.jpg') }}" title="Rose Villa, Kochi" class="popup-modal"> <img width="100%" alt="Rose Villa, Kochi" src="{{ asset('thumb/8G6A7043.jpg') }}" />
+          <h3><span> </span></h3>
+          </a> </div>
+        <div class="col-md-2 col-sm-4 col-xs-6 no-padding portfolio-box "> <a href="{{ asset('gallery/8G6A7069.jpg') }}" title="Rose Villa, Kochi" class="popup-modal"> <img width="100%" alt="Rose Villa, Kochi" src="{{ asset('thumb/8G6A7069.jpg') }}" />
+          <h3><span> </span></h3>
+          </a> </div>
+        <div class="col-md-2 col-sm-4 col-xs-6 no-padding portfolio-box "> <a href="{{ asset('gallery/ext.jpg') }}" title="Rose Villa, Kochi" class="popup-modal"> <img width="100%" alt="Rose Villa, Kochi" src="{{ asset('thumb/ext.jpg') }}" />
+          <h3><span> </span></h3>
+          </a> </div>
+       
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

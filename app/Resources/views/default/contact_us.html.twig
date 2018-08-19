@@ -1,0 +1,143 @@
+{% extends 'base.html.twig' %}
+{% block title %} <title> Contact Us - Rose Villa Home Stay </title> {% endblock %}
+
+{% block body %}
+<!-- Menu Block -->
+
+		<div class="menu-block">
+			<!-- Container -->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<nav class="navbar navbar-default ow-navigation">
+							<div class="navbar-header">
+								<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<a href="index.php" title="Rose Villa, Kochi" class="navbar-brand"><img src="{{ asset('images/mlogo.png') }}" alt="The Holiday Resorts, Cottages &amp; Spa Manali" /></a>
+							</div>
+                            <style>
+                            .ow-navigation::after {
+		border-bottom: 60px solid #e7e7e7; 
+	
+	}
+		</style>					<div class="navbar-collapse collapse" id="navbar">
+								<ul class="nav navbar-nav">
+									<li><a href="{{ path('homepage') }}" title="Home">Home</a></li>
+                                    <li><a href="{{ path('aboutpage') }}" title="About Us">About Us</a></li>
+                                    <li><a href="{{ path('packagespage') }}" title="Packages">Packages</a></li>
+                                   	<li><a href="{{ path('facilitiespage') }}" title="Facilities">Facilities</a></li>
+									<li><a href="{{ path('gallerypage') }}" title="Gallery">Gallery</a></li>
+									<li class="active"><a style="padding-right:50px" href="{{ path('contact_uspage') }}" title="Contact">Contact</a></li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div><!-- Row /- -->
+			</div><!-- Container /- -->
+		</div><!-- Menu Block /- -->
+	</header><!-- Header Section /- -->
+	<main class="site-main page-spacing">
+		<div class="container-fluid page-banner about-banner">
+			<div class="container">
+				<h3>Contact Us</h3>
+				<ol class="breadcrumb">
+					<li><a href="index.php">Home</a></li>
+					<li class="active">Contact Us</li>
+				</ol>
+			</div>
+		</div><!-- Page Banner /- -->
+		
+		<div class="map container-fluid no-padding">
+			     <div class="mapouter">
+					<div class="gmap_canvas">
+						<iframe width="100%" height="360px" id="gmap_canvas" src="https://maps.google.com/maps?q=santosham%20chest%20hospital&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+						<a href="https://www.pureblack.de/google-maps/"></a>
+					</div>
+					<style>
+						.mapouter {
+							text-align: right;
+							height: 400px;
+							width: 100%;
+						}
+						.gmap_canvas {
+							overflow: hidden;
+							background: none!important;
+							height:480px;
+							width:100%;
+						}
+					</style>
+				</div><!--  Map Section /- -->
+		</div><!--  Map Section /- -->
+		
+		<!-- Container -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-4 col-xs-12 contact-content">
+					<h4>Contact Details</h4>
+					<div class="contact-detail">
+						<i class="fa fa-map-marker"></i>
+						<h5> Address</h5>
+												<p><i class="fa fa-map-marker"></i> <strong>Address: </strong></p>
+						<p>Rose HomeStay </p>
+					
+						
+						<p><i class="fa fa-phone"></i> <strong>Phone: </strong></p>
+						<p><span>+91 9895662215, +91 04802788810, </span> </p>
+					
+						
+						<p><i class="fa fa-envelope"></i> Email: <a href="mailto:justinvarghese500@gmail.com" title="justinvarghese500@gmail.com">justinvarghese500@gmail.com</a></p>
+					</div>
+					<div class="contact-detail">
+						<i class="fa fa-phone"></i>
+						<h5>Phone</h5>
+						<p><span><a href="#">+91 98166 53359, +91 98166 13359, 
++91 86288 13359,<br> +91 98160 03359, +91 96252 03359,  +91 96250 03359</a></span></p>
+					</div>
+					<div class="contact-detail">
+						<i class="fa fa-envelope"></i>
+						<h5>Email Address</h5>
+						<p><a href="mailto:sales@theholidayresortsandcottages.com" title="sales@theholidayresortsandcottages.com">sales@theholidayresortsandcottages.com</a></p>
+					</div>
+					<ul>
+						<li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>
+						<li><a href="#" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+						<li><a href="#" title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#" title="Skype"><i class="fa fa-skype"></i></a></li>
+						<li><a href="#" title="Tumblr"><i class="fa fa-tumblr"></i></a></li>
+					</ul>
+				</div>
+                <div class="col-md-6 col-sm-4 col-xs-12 contact-content">
+					<h4>Leave A Message</h4>
+					<form class="contact-form">
+						<div class="form-group">
+							<input type="text" class="form-control" id="input_name" name="contact-name" placeholder="Full Name" required />
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control" id="input_email" name="contact-email" placeholder="Email Address" required />
+						</div>
+						<div class="form-group">
+							<textarea id="textarea_message" class="form-control" rows="5" name="contact-message" placeholder="Type here message" required ></textarea>
+						</div>
+						<div class="form-group">
+							<input id="btn_submit" type="submit" value="Send Message" />
+						</div>
+						<div id="alert-msg" class="alert-msg"></div>
+					</form>
+				</div><!-- Contact Content /- -->
+				<!-- Contact Content -->
+				<!-- Contact Content /- -->
+			</div>			
+		</div>
+        
+        
+        
+		
+	</main>
+{% endblock %}

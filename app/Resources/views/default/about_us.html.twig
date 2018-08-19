@@ -1,0 +1,81 @@
+{% extends 'base.html.twig' %}
+{% block title %} <title> About Us - Rose Villa Home Stay </title> {% endblock %}
+	{% block body %}
+<div class="menu-block">
+			<!-- Container -->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<nav class="navbar navbar-default ow-navigation">
+							<div class="navbar-header">
+								<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<a href="index.php" title="The Holiday Resorts, Cottages & Spa, Manali" class="navbar-brand"><img src="{{ asset('images/mlogo.png') }}" alt="The Holiday Resorts, Cottages &amp; Spa Manali" /></a>
+							</div>
+							<div class="navbar-collapse collapse" id="navbar">
+								<ul class="nav navbar-nav">
+									<li><a href="{{ path('homepage') }}" title="Home">Home</a></li>
+                                    <li class="active"><a href="{{ path('aboutpage') }}" title="About Us">About Us</a></li>
+                                    <li><a href="{{ path('packagespage') }}" title="Packages">Packages</a></li>
+                                   	<li><a href="{{ path('facilitiespage') }}" title="Facilities">Facilities</a></li>
+									<li><a href="{{ path('gallerypage') }}" title="Gallery">Gallery</a></li>
+									<li><a style="padding-right:50px" href="{{ path('contact_uspage') }}" title="Contact">Contact</a></li>
+								</ul>
+								
+							</div>
+						</nav>
+					</div>
+				</div><!-- Row /- -->
+			</div><!-- Container /- -->
+		</div><!-- Menu Block /- -->
+	</header><!-- Header Section /- -->	
+	<main class="site-main page-spacing">
+		<div class="container-fluid page-banner about-banner">
+			<div class="container">
+				<h3>About Us</h3>
+				<ol class="breadcrumb">
+					<li><a href="index.php">Home</a></li>
+					<li class="active">About Us</li>
+				</ol>
+			</div>
+		</div><!-- Page Banner /- -->
+		<div class="section-padding"></div>
+		<div class="container">
+			<div class="row">
+                <div style="padding:10px" class="  col-lg-12">
+				<article class=" type-post col-md-12 no-padding">
+						<div style="padding:10px;" class="entry-cover col-md-6 ">
+							<a href="#"><img src="{{ asset('images/hotel1.jpg') }}" alt="Best hotel in manali" /></a>
+						</div>
+						<div style="padding:10px;" class="entry-cover col-md-6 ">
+							<a href="#"><img src="{{ asset('images/hotel2.jpg') }}" alt="Best Resort in manali" /></a>
+						</div>
+						
+					</article>
+					<article style="padding:10px; margin-top:10px; margin-bottom:0px; " class="type-post col-md-12 no-padding">
+						<div class="col-md-12 content-box no-padding">
+							<h3 class="entry-title"><a href="#" >The Holiday Rose Villa - Home Stay & Taxi Service, Kochi</a></h3>
+							<div class="entry-content">
+								<p>Luxurious interiors, comfortable accommodation, and Taxi services Kochi welcome you to the world of elegance and opulence in the heart of Kochi! With stunning views of the mountains and the silent waters, the resort offers a serene and scintillating experience that you would treasure forever. Relax and unwind in the unstinting luxury and revitalising comfort that await you in our exotic abode.  </p>
+							</div>
+							
+						</div>
+					</article>
+                   </div>	 
+			</div>			
+		</div>
+        
+        
+		<!-- Services Section -->
+		
+        
+        
+        
+		
+	</main>
+
+{% endblock %}
