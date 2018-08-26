@@ -4,6 +4,8 @@
     <id name="id" type="integer" column="id">
       <generator strategy="AUTO"/>
     </id>
-    <field name="path" type="text" column="path" length="500"/>
+    <field name="imageName" type="text" column="imageName" length="256"/>
+    <field name="imageSize" type="integer" column="imageSize" length="50"/>
+    <field name="updatedAt" type="datetime" column="updatedAt"/>
   </entity>
 </doctrine-mapping>

@@ -55,5 +55,91 @@ class Packages
     {
         return $this->path;
     }
-}
+    /**
+     * @var string
+     */
+    private $imageName;
 
+    /**
+     * @var int
+     */
+    private $imageSize;
+
+    /**
+     * @var \DateTime
+     */
+    private $updatedAt;
+
+
+    /**
+     * Set imageName.
+     *
+     * @param string $imageName
+     *
+     * @return Packages
+     */
+    public function setImageName($imageName)
+    {
+        $this->imageName = $imageName;
+
+        return $this;
+    }
+
+    /**
+     * Get imageName.
+     *
+     * @return string
+     */
+    public function getImageName()
+    {
+        return $this->imageName;
+    }
+
+    /**
+     * Set imageSize.
+     *
+     * @param int $imageSize
+     *
+     * @return Packages
+     */
+    public function setImageSize($imageSize)
+    {
+        $this->imageSize = $imageSize;
+
+        return $this;
+    }
+
+    /**
+     * Get imageSize.
+     *
+     * @return int
+     */
+    public function getImageSize()
+    {
+        return $this->imageSize;
+    }
+
+    /**
+     * Set updatedAt.
+     *
+     * @param \DateTime $updatedAt
+     *
+     * @return Packages
+     */
+    public function setUpdatedAt($updatedAt)
+    {
+        $this->updatedAt = $updatedAt;
+
+        return $this;
+    }
+
+    /**
+     * Get updatedAt.
+     *
+     * @return \DateTime
+     */
+    public function getUpdatedAt()
+    {
+        return $this->updatedAt;
+    }
+}

@@ -79,4 +79,17 @@ fos_user:
     from_email:
         address: "%mailer_user%"
         sender_name: "%mailer_user%"
+vich_uploader:
+    db_driver: orm # or mongodb or propel or phpcr
+    mappings:
+        slider_image:
+            uri_prefix: /images/slider
+            upload_destination: '%kernel.project_dir%/public/images/slider'
+        gallery_image:
+            uri_prefix: /images/gallery
+            upload_destination: '%kernel.project_dir%/public/images/gallery'
+        package_image:
+            uri_prefix: /images/package
+            upload_destination: '%kernel.project_dir%/public/images/package'
+
 
