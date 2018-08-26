@@ -1,11 +1,5 @@
 {% trans_default_domain 'FOSUserBundle' %}
 
-{% if error %}
-    <div class="alert alert-danger" role="alert">
-  {{ error.messageKey|trans(error.messageData, 'security') }}
-</div>
-    
-{% endif %}
  
     <div id="wrapper">
 
@@ -25,13 +19,13 @@
             <ul class="nav navbar-top-links navbar-right">
                
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/pages/index.html#">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="{{ path("dashboardpage") }}">
                         <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/pages/index.html#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        <li><a href="{{ path("gallerypage") }}"><i class="fa fa-user fa-fw"></i> Gallery</a>
                         </li>
-                        <li><a href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/pages/index.html#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        <li><a href="{{ path("dashboardpage") }}"><i class="fa fa-gear fa-fw"></i> Settings</a>
                         </li>
                         <li class="divider"></li>
                         <li><a href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/pages/login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
@@ -78,6 +72,9 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header">Dashboard</h1>
+                    <form>
+                        <input type="text">
+                    </form>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
