@@ -4,16 +4,11 @@
     <id name="id" type="integer" column="id">
       <generator strategy="IDENTITY"/>
     </id>
-    <field name="imagename" type="text" column="imageName" length="65535" nullable="false">
+    <field name="imageName" type="text" column="imageName" length="65535" nullable="false">
       <options>
         <option name="fixed"/>
       </options>
     </field>
-    <field name="imagesize" type="integer" column="imageSize" nullable="false">
-      <options>
-        <option name="unsigned"/>
-      </options>
-    </field>
-    <field name="updatedat" type="datetime" column="updatedAt" nullable="false"/>
+    <field name="updatedAt" type="datetime" column="updatedAt" nullable="false"/>
   </entity>
 </doctrine-mapping>

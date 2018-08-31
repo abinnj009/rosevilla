@@ -1,7 +1,6 @@
 <?php
 namespace AppBundle\Form;
 
-use Vich\UploaderBundle\Form\Type\VichImageType;
 
 use AppBundle\Entity\Gallery;
 
@@ -20,14 +19,7 @@ class GalleryUpload extends AbstractType
     {
         // ...
 
-        $builder->add('imageFile', VichImageType::class, [
-            'required' => true,
-            'allow_delete' => true,
-            'download_label' => '...',
-            'download_uri' => true,
-            'image_uri' => true,
-            // 'imagine_pattern' => '...',
-        ])
+        $builder->add('imageName', FileType::class, array('label' => 'Gallery Photo'))
         ->add('Save', SubmitType::class);
     }
     public function configureOptions(OptionsResolver $resolver)

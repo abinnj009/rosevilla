@@ -49,7 +49,7 @@ class DashboardController extends Controller
         if($form->isValid() && $form->isSubmitted()){
             // echo "<pre>";
             //print_r($input->getImageFile());echo "</pre>";exit;
-            $file =  $gallery->getImageFile();
+            $file =  $form->get('imageName')->getData();
             if(($file->getClientSize() > 4388608))
                 {
                  $request->getSession()->getFlashBag()->add('img_fail', array(
@@ -60,11 +60,12 @@ class DashboardController extends Controller
                 } 
 
             $fileName = md5(uniqid()).'.'. $file->guessExtension();
-            $file->move($this->container->getParameter('gallery_image_dir'), $fileName); 
-            $gallery->setImageFile($file);
             $gallery->setImageName($fileName);
             $currentdate = new \DateTime('now');
             $gallery->setUpdatedAt($currentdate);
+            $file->move($this->container->getParameter('gallery_image_dir'), $fileName); 
+            // $gallery->setImageFile($file);
+            
             // echo "<pre>"; print_r($gallery); echo "</pre>";exit;
             $entityManager->persist($gallery);
             $entityManager->flush();
