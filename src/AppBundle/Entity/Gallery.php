@@ -27,13 +27,12 @@ class Gallery
     /**
      * NOTE: This is not a mapped field of entity metadata, just a simple property.
      * 
-     * @Vich\UploadableField(mapping="slider_image", fileNameProperty="imageName", size="imageSize")
+     * @Vich\UploadableField(mapping="gallery_image", fileNameProperty="imageName", size="imageSize")
      * 
      * @var File
      */
 
     private $imageFile;
-
 
 
 

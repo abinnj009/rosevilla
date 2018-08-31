@@ -8,6 +8,9 @@ imports:
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
     locale: en
+    slider_image_dir: '%kernel.project_dir%/web/images/slider'
+    gallery_image_dir: '%kernel.project_dir%/web/images/gallery'
+    package_image_dir: '%kernel.project_dir%/web/images/package'
 
 framework:
     templating:
@@ -81,15 +84,28 @@ fos_user:
         sender_name: "%mailer_user%"
 vich_uploader:
     db_driver: orm # or mongodb or propel or phpcr
+    
     mappings:
         slider_image:
             uri_prefix: /images/slider
-            upload_destination: '%kernel.project_dir%/public/images/slider'
+            upload_destination: '%kernel.project_dir%/web/images/slider'
+            namer: Vich\UploaderBundle\Naming\UniqidNamer
+            inject_on_load:     true
+            delete_on_update:   true
+            delete_on_remove:   true
         gallery_image:
             uri_prefix: /images/gallery
-            upload_destination: '%kernel.project_dir%/public/images/gallery'
+            upload_destination: '%kernel.project_dir%/web/images/gallery'
+            namer: Vich\UploaderBundle\Naming\UniqidNamer
+            inject_on_load:     true
+            delete_on_update:   true
+            delete_on_remove:   true
         package_image:
             uri_prefix: /images/package
-            upload_destination: '%kernel.project_dir%/public/images/package'
+            upload_destination: '%kernel.project_dir%/web/images/package'
+            namer: Vich\UploaderBundle\Naming\UniqidNamer
+            inject_on_load:     true
+            delete_on_update:   true
+            delete_on_remove:   true
 
 
